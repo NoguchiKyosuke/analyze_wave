@@ -242,13 +242,13 @@ def compare_phase_features(file_list, output_filename="comparison_phase_features
 if __name__ == "__main__":
     # The specific files requested by the user
     files_to_compare = [
-        "/home/nk21137/OneDrive/5years/graduation_research/analyze_wave/M1/M001_R2_E4_L1_BU.wav",
-        "/home/nk21137/OneDrive/5years/graduation_research/analyze_wave/M1/M001_R2_E4_L2_BU.wav",
-        "/home/nk21137/OneDrive/5years/graduation_research/analyze_wave/M1/M001_R2_E4_M1_BU.wav"
+        "./F001_R1_E1_M1_BT.wav",
+        "./F001_R1_E1_L1_BT.wav",
+        "./F001_R1_E1_L2_BT.wav"
     ]
     
     # Check if files exist, if not try relative paths
-    base_dir = "/home/nk21137/OneDrive/5years/graduation_research/analyze_wave/"
+    base_dir = "./"
     resolved_files = []
     for f in files_to_compare:
         if os.path.exists(f):
